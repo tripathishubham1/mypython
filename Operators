@@ -1,0 +1,125 @@
+#### OPERATORS ####
+
+
+## ARITHMATIAC OPERATORS ##
+## + = add --> 10+5 = 15
+## - = minus --> 10-5 =5
+## / = divide --> 10/4 = 2.5
+## * = multiply --> 2*3 = 6
+## % = modulus --> 10%9 = 1
+## ** = exponent --> 2**3 = 8
+## // = flawed division --> 10//4 = 2
+
+## PYTHON FOLLOWS PEDMAS RULE
+
+# P= PARENTHASIS
+# E = EXPONANT
+# D = DIVISION
+# M = MULTIPLY
+# A = ADDITION
+# S = SUBSTRACTION
+
+## HOW WE CALCULATE MODULOUS
+#    if a=10,b=3
+#    remainder = a-floor(a/b)*b = a%b
+#
+#    Here floor is the lowest value of decimal int (in positive values)
+#               and the highest value of decimal int (in negative values)
+#
+#    such that examples ::::
+#
+# 1.if a, b = 10, 3
+#      remainder = 10-((10/3)*3)
+#                = 10-(3)*3
+#                = 10-9
+#                = 1
+# 2.if a, b = -10, 3
+#      remainder = (-10)-(((-10)/3)*3)
+#                = -10 - (-4)*3
+#                = -10 + 12
+#                = 2
+# 3.if a, b = 10, -3
+#      remainder = (10)-((10/(-3))*(-3))
+#                =  10 - (-4)*(-3)
+#                =  10 - 12
+#                =  -2
+# 4.if a, b = -10, -3
+#      remainder = (-10)-(((-10)/(-3))*(-3))
+#                = -10 - 3* (-3)
+#                = -10 - (-9)
+#                = -10+9
+#                = -1
+###  IMPORTANT POINT ----->
+
+# EVERYTHING IN PYTHON ARE DIVIDED IN TWO TYPES OF ELEMENTS
+#  MUTABLE & IMMUTABLE
+#
+# MUTABEL-->OBJECTS CAN BE MODIFIED AFTER IT IS CREATED :: LIKE--> list, set , dict
+# IMMUTABLE-->OBJECTS CAN NOT BE MODIFIED AFTER IT IS CREATED :: LIKE--> int,float,str
+
+##  Conditional Statements ---->
+
+# example
+#
+# a = int(input("Enter a Number = "))
+#
+# if a%2 == 0 :
+#     print("This is an even number!!")
+# else:
+#     print("Its an odd number!!")
+
+########------>>>>>>SPACES ARE VERY IMPORTANT YOU CAN NOT WRITE print STATEMENT IN THE STARTING OF LINE IT WILL CONSIDER
+##  IT AS A NEW STATEMENT**********
+
+#### FOR MULTIPLE CONDITIONS ----> elif   <-----is used   example---->
+#
+# num = float(input("Enter a Number -->  "))
+#
+# if num>0:
+#     print(num," is a positive number.")
+# elif num<0:
+#     print(num," is a negative number.")
+# else:
+#     print("It is a ZERO")
+
+# MEMBERSHIP OPERATORS ---->>>
+  # in & (not in)
+  # used to confirm the statements ---->
+#
+# em = input("Email ==> ")
+#
+#
+# if "shurmaliya@gmail.com" in em:
+#     print("Email is Found")
+# else:
+#     print("Incorrect Email!!")
+
+### LOGICAL OPERATORS ----->>>>>>>
+##  and ,  or ,  not
+## Examples---->>>
+
+# a,b,c,d = 5,6,77,8
+#
+# print("The Greatest Number is ")
+# if a>b and a>c and a>d:
+#     print(a)
+# elif b>c and b>d:
+#     print(b)
+# elif c>d:
+#     print(c)
+# else:
+#     print(d)
+# -----------------------------------------------------------------------------------------------------------------------
+# color=input()
+#
+# if color=="red" or color=="green" or color=="blue":
+#     print("A primary color!!")
+# else:
+#     print("Not a primary color!!")
+# -----------------------------------------------------------------------------------------------------------------------
+# color=input()
+#
+# if not(color=="red" or color=="green" or color=="blue"):
+#     print("A primary color!!")
+# else:
+#     print("Not a primary color!!")
