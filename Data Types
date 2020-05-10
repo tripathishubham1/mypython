@@ -1,0 +1,47 @@
+# Data types---->>
+#name = "Shubham Urmaliya"
+#age = 19
+#height = 5.8
+#gender = "M"
+#satisfaction = True
+
+#print("Name = ",name,"Type of Name = ",type(name),"Age = ",age,"Type of Age = ",type(age))
+#print("Height = ",height,"Type of Height = ",type(height),"Gender = ",gender,"Type of Gender = ",type(gender))
+#print("Satisfaction = ",satisfaction,"Satisfaction type = ",type(satisfaction))
+
+# How to take Inputs---->>
+
+# name = input("Your Name = ")
+# age = input("Your Age = ")
+# height = input("Your Height = ")
+# info = input("All the Input are Correct (True,False) = ")
+
+#print("Your Name is ",type(name))
+#print("Your Age is ",type(age))
+#print("Your Height is ",type(height))
+#print("Your info's are ",type(info))
+
+# ****IMPORTANT POINT Here we have to notice that we take any input from keyboard will consider as a string type
+
+# How to Classify input datatype---->>
+#
+# age = int(input("Your Age = "))
+# print("Your age type is ",type(age))
+
+
+## ***RULES--->>
+# 1. We can type capital or small, any type of letter or words, it doesnt matter
+# 2. Every Variable has its own id such that ---> AGE & age are not same ,they both have different id
+# 3. Variables names never start  with numbers ---> 1name-->(False), But at the end or middle it is possible ---> na1me1-->(True)
+# 4. We cant assign a special charachter in the variable ---> name@-->(False)
+# 5. Only Underscroll Will work :: your_name-->(True)
+# 6. If any keyword have predefined meaning then it will not use as a variable:::
+#    print = "shubham"
+#    print(,print)
+
+
+###****We can know the reference or address id's of variables --->>
+
+# name = "shubham"
+# NAME = "shubham"
+# print("name = ",id(name),"NAME = ",id(NAME))
