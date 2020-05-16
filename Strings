@@ -1,0 +1,54 @@
+######STRINGS  ---->>>>
+
+# string="Hi Galaxy"
+# #we can not use string like below
+# string = "hi "galaxy"" ---XXXXX(False)
+#
+# #for this we have to type like this
+#
+# string = 'hi "galaxy"'-------(True)
+#
+# also we can not use this --->
+# string = "hello everyo\ne \this eve\ning"
+#
+# for this input we have to make string to a raw string
+#
+# for this we have to type this----->
+#     string = r"hello everyo\ne \this eve\ning"------>(True) r makes the input a raw string
+
+###  STRING INDEXING --------->>>>>>>>>
+# we have to use  the [] this function and start it from 0 to find a index value-->
+#(also calculate spaces)
+# st="Hello Shubham"
+#
+# print(st[6])  --->it will print "S"
+#
+# We can also COUNT THE length of string-0----->
+#
+# st="HELLO"
+# print(len(st))     answer will be 5 because string length function excludess the last one :) ......
+#####    STRING SLICING------->>>>>>
+# stl = "H,E,L,L,O"
+#
+# print(stl[0:9:2])
+#
+# HERE   stl[ x : y : z ]
+# x range == 0 to n OR -n
+# y range == 0 to n+1  -(n+1)
+# z range == 1 to n-1
+
+####  STRING COMPARISON ---->>>>>>>
+#
+# ord() ----->>> This function gives the ASCII value of letters!! (It is requires every single letter to be checked if it is capital or small to  become equall)
+# chr() ------>>> This function gives the word from the ASCII value .....
+
+# to compare the operators are --------->>>>>> <,>,==
+#
+# example--->>
+
+# str1= "Hello"
+# str2= "HELLO"
+#
+# print(str1 == str2)               give false
+#
+#  In String Comparison is taken by each start value to end value at every point of Ascii value...
