@@ -1,0 +1,117 @@
+#######LOOOOOPPSSSS    =====>>
+#  END FUNCTION IN LOOP WILL GET EXICUTED AFTER EACH AND EVERY ROTATION
+# EXAMPLE=======>>>>>
+#
+# i = 1
+#
+# while i<6:
+# #     print(i,end="\t\n")
+# #     i=i+1
+#
+# the function    pass used at the end of loops and conditional statements for pausing the loops or coditions
+
+####     BREAK   &&&&   CONTINUE
+
+# BREAK ==  it is used to Stop the loops or conditiional statements
+# CONTINUE == it is used to reopen the loop from any condition
+# #
+# # Example-->>>
+# print("password making\n\n")
+# while True:
+#     email = input("Enter Email :: ")
+#
+#     if email == "shurmaliya@gmail.com" :
+#         print("Email Verified!!\n")
+#         passw = int(input("Enter Password :: "))
+#         if passw == 9301299012:
+#              print("Password Verified\n")
+#              print("WELCOME SHUBHAM")
+#              break
+#         else:
+#             print("TRY AGAIN!!\n")
+#             continue
+
+#A F0R LOOP === CONTAINS ANY REGULAR VARIABLE STATEMENT THAT LIES IN THE CONDITION
+#
+# student_names = ["Shubham","Nimish","Rohit","Rohan"]
+# student_id    = [2,6,1,4]
+#
+# while True:
+#     val = int(input("What do You want\n1.Names\n2.ID NO\n"))
+#     if val == 1:
+#        for names in student_names:
+#           print(names)
+#
+#     elif val == 2:
+#            for id in student_id:
+#                print(id)
+#
+#
+#     else:
+#           continue
+
+
+#  ELSE BLOCK LOOP=====>>>>>>
+#  ELSE STATEMENT CAN BE USED IN LOOPS  EXAMPLE====>>>>
+#
+# i = 1,23,45,67
+#
+# for z in i:
+#     print(i[0])
+# else:
+#     print("hello")
+
+# RANGE FUNCTION=====>>>>
+# it is used in loops to get value from one range to another and for a given sequence-->>>
+
+# for i in range(1000,99,-100):
+#     print(i)
+#
+#
+    # here 1000 is start value == "n",,99 is stop value== "n-1",, -100 is sequence interval
+
+# lst = [12,65,7,46]
+#
+# for i in range(len(lst)):
+#     print(lst[i])
+
+
+### Some more functions in loopssss
+
+# ___>>>>>>>  reversed()  function reverse the values of loops
+# example---->>>
+#
+# x = ["abhay","shubham","nimish"]
+#
+# for z in reversed(range(len(x))):
+#     print(x[z])
+
+# SORTED FUNCTIONNN====>>>>>
+# example---->>>>>
+#
+# x = ["shubham","nimish","rohit","rohan","abhay"]
+#
+# for z in sorted(x):
+#     print(z)
+
+# a function called reverse in sorted fun====>>>>
+
+# x = [55,23,67,40,23]
+#
+# for f in sorted(x ,reverse= True):
+#     print(f)
+
+#  A FUNCTION  CALLED enumerate()  wich gives the index or length value of list
+#
+# lst = ["java","python","c","kotlin"]
+#
+# for index, z in enumerate(lst):
+#     print(index,":",z,"\n")
+
+# Another Fnctin called as  zip()  is used to joint the lists but condition is that combining lists should have same elements:::
+
+# lst1 = ["Java","Python","Javascript","Kotlin"]
+# lst2 = ["50%","70%","89%","80%"]
+#
+# for l1,l2 in zip(lst1, lst2):
+#     print("Course : ",l1,"         ","Rate : ",l2)
