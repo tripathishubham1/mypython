@@ -1,0 +1,24 @@
+####    LIST --->>>  list() ---it is a data type  ---->>>MUTABLE  (CAN CHANGE ITS DATATYPE)
+#  we can make list by assigning diff types of elements in [] <<---- this brackets
+#
+# sl = [1,5,"hello",6]
+# sl1= [2,6,9,"hello"]
+#
+# ll = [sl,sl1]
+#
+# print(ll[1][2])
+
+
+
+####TUPLE ----->>>>> is immutable but have lots of functions in it!!!!!!!
+
+# to check its functions use the dir() function
+
+# t= 1,2,3,4
+# print(dir(t))
+# print(type(t))
+#
+# for a single element------->>>
+#
+# t = 1,
+# print(t,type(t))
