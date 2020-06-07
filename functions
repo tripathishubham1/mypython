@@ -1,0 +1,164 @@
+### FUNCTION =======>>>>>>>
+# we use def<----   for function making
+# EXAMPLE 1-->>
+# def add(a,b):
+#     a = int(input("Data 1 = "))
+#     b = int(input("Data 2 = "))
+#     c = a+b
+#     return c
+#
+# c = add("data1","data2")
+# print(c)
+
+#EXAMPLE 2-->>
+
+# def print_name():
+    # name = input("Enter Name = ")
+    # print(name.upper())
+
+# print_name()
+
+# in this example we know these new things--->>>
+
+# {.upper()}--->>> this function gives the uppercase letters of given value
+
+
+# EXAMPLE 3------>>>>>>
+#
+# def marks_sum(a,b,c):
+#     sum = a+b+c
+#
+#     return sum
+#
+# def marks_avg(sum):
+#     avg = sum/3
+#
+#     return avg
+#
+# def marks_grade(avg):
+#     if avg>80:
+#         print("Grade A")
+#     elif avg>60:
+#         print("Grade B")
+#     elif avg>40:
+#         print("Grade C")
+#     else:
+#         print("FAIL")
+#
+#
+# sum = marks_sum(int(input("English = ")),int(input("Hindi = ")),int(input("Maths = ")))
+# avg = marks_avg(sum)
+# print("Total Marks : {} Average : {}".format(sum,avg))
+# marks_grade(avg)
+#
+#
+# # here we learn about a new FUNCTION WHICH IS CALLED AS PLACEHOLDER(symbol =-> {})
+# it is used inside the print function and inside the aphostrophe
+# to impliment this we use  at the end of apostrophe -->> .format(var1,var2)
+#
+# example-->>
+# print("Name : {} Age : {} Sex : {}".format(var1,var2,var3))
+
+#   global   -->>>>this statement is used to have the global variable in the function
+
+ #example 1--->
+
+# glob_var = 154
+#
+# def var():
+#      global glob_var
+#      global_var = 156
+#      print(global_var)
+#
+# var()
+
+
+#   SOME INBUILT FUNCTIONS ====>>>>
+
+# (1): sum  --->> it will give the sum of all the tuple
+#
+# x = [10,34,12,56]
+# print(sum(x))
+
+# (2): min  ---->>> it will give th mnimum value of the tuple
+
+# x = [10,34,12,56]
+# print(min(x))
+
+# (3): max  ---->>> it will give the maximum of the tuple
+# x = [10,34,12,56]
+# print(max(x))
+
+#(4): .index ----->>>>  if we put a substring of a string it will give the index number of starting string..
+#
+# str = "Hello There I am Using Whatsapp"
+#
+# print(str.index("Whatsapp"))
+
+#(5): YOU CAN ADD UP LIMITS IN THIS .index Function
+
+# str.index("Whatsapp",10,len(stm))
+# in first column the substring .....in second column the initial value ....in third column the final value at which you have to search the
+
+# (6) : help() function gives you the help how to run the inbuilt functions and the required parameters
+
+
+# FUNCTION DOCUMENTATIOIN---->>>
+# Whenever we built a functiion we need a documentation to recognize the function clearly for this in
+    # user built function we use triple quotes(""")   with this you can classify the detailss of the function
+    # example------>>>>>>
+
+# def add(a,b):
+#     """
+#     In this Function We Add  Two Parameters a & b
+#     :param a: A int datatype variable
+#     :param b: A int Datatype variable
+#     :return: Sum Of Both
+#     """
+#
+#     c = a+b
+#     return c
+
+# help(add)
+
+# WE CAN ALSO USE THIS FUNCTION INSTEAD OF help() to view the documentation
+# [.__doc__]<<<--
+
+# ---------------------------------------------------------------------------------------
+
+# DEFAULT ARGUEMENTS------>>>>>>
+
+# If you USE ANY USER BUILT FUNCTIONS AND IF NOT GIVE ANY PARAMETERS IT WILL USE DEFAULT PARAMETERS
+# {!!!!WARNINGGGGGGG !!!! ----  ONLY GIVE PARAMETERS IN FUNCTION FROM RIGHT TO LEFT!!!}
+# EXAMPLE---->>
+
+# def netflix(name, genere = "Thriller" , duration = "2 Hours"):
+#     print("SERIES : {}\nGENERE : {}\nDURATION : {}\n".format(name,genere,duration))
+#
+#
+# netflix("Peaky Blinders",duration = "8 Hours")
+# netflix("Money Heist",genere = "Myestry",duration = "8 hours")
+# netflix("The Space Between Us")
+
+# ARBITARY ARGUEMETS ---->>>>
+
+# THE ARBITARY ARGUEMENTS DEFINED IN FUNCTION WITH  (*args)
+# THIS WILL TAKE VARIABLES AS A TUPLE  AND we HAVE TO USE FUNCTIONS GTO ADD AND MINUS LIKE
+# sum()
+# EXAMPLE------>>>>>>
+
+# def aarg(*args):
+#     c = sum(args)
+#     print(c)
+#     return c
+#
+# aarg(1,2,3,4,5,6,7,8,9,10)
+
+# LAMBDA FUNCTION---->>>>>
+# It is a function which is used in place of def to make function it is more easy than the function to write over an impliment
+# Example ----->>>>>>>>
+# employee_salary = [4120,12414,1882,34981,8483]
+# var = list(filter(lambda s:s>5000,employee_salary))
+# print(var)
+
+# filter()  <---- this function used to filter the inputs in your own way
