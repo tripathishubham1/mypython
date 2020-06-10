@@ -1,0 +1,80 @@
+### BUILT IN FUNCTIONS ---->>>>
+
+### 1.STRINGS FUNCTIONS=====>>>>>
+
+# STRING VARIABLES ARE IMMUTABLE AND WE CAN NOT CHANGE THEM BY ANY FUNCTIONS WE HAVE TO STORE THEM IN ANOTHER VARIABLE
+
+    # DOT OPERATOR (.)  -->> USED IN STRING VARIABLES TO ADD ANY FUNCTIONS IN IT -->>
+# examples---->>>>
+
+# 1.---->>>>
+# strn = "Hello There"
+# a = strn.upper()
+# b= strn.lower()
+#
+# print(a)
+# print(b)
+
+# 2. .index--->>>>
+
+# strn = "HELLO THERE"
+#
+# print(strn.index("THERE"))
+#
+# OUTPUT WILL BE 6
+
+# 3. (.center)  --->>> this one will addup some string into a string like
+#   string.center(len(string)+50,"+")
+# this will add up 25 "+" to right and 25 to right lets have an example---->>>
+
+# strn = "HELLO WORLD"
+
+# print(strn.center(len(strn)+50,'+'))
+
+# OUTPUT == +++++++++++++++++++++++++HELLO WORLD+++++++++++++++++++++++++
+
+# 4. (.replace)  ---->>> this one replace the string elements with other string element
+
+# example ===>>>>>
+
+# strn = "Hello My Name is Shubham Urmaliya"
+
+# print(strn.replace("Shubham Urmaliya","Nimish Pandey",1))
+# outuput = "Hello My Name is Nimish Pandey"
+# because we write 1 it will replace only one time
+
+# 5. (.count) ---->> it returns how many times the string words are coming in the universal string
+# example --->>>
+
+# strn = "HELLO THERE MY NAME IS SHUBHAM AND SHUBHAM"
+#
+# print(strn.count("SHUBHAM"))
+# output = 2
+# it will give output 2 because shubham is coming 2 times
+
+# 6. (.startswith & .endswith   function)
+#  .startswith give you boolean value which specify wheather the substring is present or not in the strating index in the main string
+#  .endswith give you boolean value which specify wheather the substring is present or not in the ending index in the main string
+#  example  --->>>>
+#
+# strn = str(input("Enter Your Email = "))
+#
+# if  strn.startswith("tripathishubham") == True and strn.endswith("@gmail.com") == True:
+#       print("Email IS VALID")
+#
+# else:
+#         print("Not Google Account")
+# if you input tripathishubham@gmail.com then  it will give email is valid otherwise it will false
+
+# 7. (.strip) function
+# it removes the spaces around the strings here is the example ==>>
+#
+# strn = "    HELLO   WELCOME   "
+#
+# print(strn.strip())
+#
+# output = "HELLO WELCOME"
+
+# __________________________________________________________________________________________
+
+# LIST FUNCTIONS ARE COMING SOON ==>>>
