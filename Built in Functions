@@ -77,4 +77,89 @@
 
 # __________________________________________________________________________________________
 
-# LIST FUNCTIONS ARE COMING SOON ==>>>
+# 2. LIST FUNCTIONS ---->>>>
+
+# 1. (.append)---->>>> this function append any new element in the list
+# example--->>>
+#
+# stm = ["shubham","nimish","rohan"]
+# stm.append("rohit")
+# print(stm)
+
+# 2. (.clear)----->>> this functions clears all the element from the list
+# example--->>>
+# #
+# stm = ["shubham","nimish","rohan"]
+# stm.clear()
+# print(stm)
+
+# 3. (.remove)----->> this function removes specific element from the list
+# example---->>>
+#
+# stm = ["Shubham","Nimish","Rohit","Rohan"]
+# stm.remove("Rohit")
+# print(stm)
+
+# 4. (.pop)------->>> this function if empty removes the last element adn you can add any index number to remove the list item
+# example---->>>
+#
+# stm = ["Shubham","Rohit","Rohan"]
+# stm.pop(2)
+# print(stm)
+
+# 5. (.sort) ----->>> this will sort the list in alphabatically (order) (if it is a number then it will arrange it in ascending order)
+
+# reverse function along with sort will give reverse alphabatical order
+# # example----->>>>
+#
+# stm=["Shubham","Nimish","Rohit"]
+# stm.sort()
+# print(stm)
+# stm.sort(reverse=True)
+# print(stm)
+
+# 6. (.extend)------->> this function add a new list in the previous list
+# # example---->>>
+#
+# stm1 = ["Shubham","Nimish","Rohit"]
+# stm2 = [30,40,50]
+#
+# stm1.extend(stm2)
+# print(stm1)
+
+# ---------------------------------------------------------------------------------------
+#
+# HOW TO MEASURE THE EXCECUTION TIME OF SMALL CODES SNIPPETS IN PYTHON--->>
+
+# First we have to type (timeit) function description
+# here we are testing which loop excecution time is better in for loop and while loop..
+
+
+# from timeit import timeit
+#
+# def while_loop():
+#     i,sum=0,0
+#     while i<100:
+#           sum=sum+i
+#           i=i+1
+#
+#
+# def for_loop():
+#     sum=0
+#     for i in range(100):
+#         sum=sum+i
+#
+#
+# x = timeit(while_loop,number=100)
+# y = timeit(for_loop,number=100)
+#
+# print(x,y)
+#
+# Output =  0.003251000000000004 0.001336900000000002
+#
+# this gives that use of for loop is better than while loop
+#
+#
+# here in timeit function we use number=100   which means it will only  calculate the time for 100 times
+#     if you leave blank then it will give time for 1 million time iteration
+# -------------------------------------------------------------------------------------------------------------------------
