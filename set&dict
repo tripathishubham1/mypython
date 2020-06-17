@@ -1,0 +1,47 @@
+# -------------------------------- SET & OPERATIONS  ------------------------------------
+
+# A set includes a diffrent kinds of objects in it in an unordered way
+# we use curlibraces to implment a set.or use set()
+
+# in sets there is not any type of indexing so for indexing we use
+# set({})      <<--- like this such as curlibraces in a set funtion
+# if you not define set as the above you will not be able to index it.
+# we can use loops for printing indexes.
+# it will always print an unordered printing.
+# Example---->>>>
+
+# name_set = set({"shubham","nimish","rohan","rohit"})
+# for name in name_set:
+#        print(name)
+
+
+# If you use .pop function in the set it will randomly chose one of the element and remove itself.
+# so we ue .remove function to remove a particular element.
+# example----->>>>
+#
+# name_set = set({"shubham","nimish","rohan","rohit"})
+# name_set.remove("nimish")
+# for name in name_set:
+#     print(name)
+
+
+# IN SET LANGUAGE WE USE MATHEMATICS OPERATORS HERE BUT AS DIFFRENT KEYWORD--->>>
+
+
+# |    --->>> THIS IS Union (includes each and every element in boths the set but once ata time )
+# -    --->>> this is minus (if set 1 have some elements in set 2 the  it will show set 1 excluding that elements which are presented inn set 2 )
+# &    --->>> this is intersection (only shows that elements which are presented in both sets)
+# ^    --->>> This is like it will remove the same elements in both sets and show you the remaining ones
+
+# examples---->>>>
+
+# set1 = {11,23,4,5,13,45,12,10,3}
+# set2 = {11,33,2,3,4,6,34,77,44}
+#
+# print(set1 | set2)
+# print(set1 - set2)
+# print(set1 & set2)
+# print(set1 ^ set2)
+
+#____________________________________________________________________________________________________________________________________
+Dictionaries Part is coming soon Stay Tuned--->>>>
