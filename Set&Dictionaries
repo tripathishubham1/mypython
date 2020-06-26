@@ -15,6 +15,7 @@
 #        print(name)
 
 
+
 # If you use .pop function in the set it will randomly chose one of the element and remove itself.
 # so we ue .remove function to remove a particular element.
 # example----->>>>
@@ -43,5 +44,53 @@
 # print(set1 & set2)
 # print(set1 ^ set2)
 
-#____________________________________________________________________________________________________________________________________
-Dictionaries Part is coming soon Stay Tuned--->>>>
+# ___________________________________________________________________________________
+# Dictionaries--->>>>
+
+# 1. dictionaries have a set value of keys & meanings like the natural have
+# 2. the keys are uniques and immutable that is why we use tuple here
+# 3. we dont use list here because its elements are mutable and we use keys that are immutable in dictionary
+# products = {"EN19CS3066047":"Shubham","EN19CS306031":"Nimish"}
+# here en19XXXXXXXX is the key which is immutable   if we use this key again with different meaning then it will overwrite the previous one.
+# print(products)
+
+# here one thing is to be known that the dictionary is indexed by the keys example-->>
+# products = {"EN19CS3066047":"Shubham","EN19CS306031":"Nimish"}
+# print(products["EN19CS3066047"])
+# IT WILL PRINT THE MEANING
+
+
+# (.get)--->>>this function we should prefer to get meanings of key values
+# using this function if we index that key which is not present in the dictionary it will return none  instead of this it will return exception
+# products = {"EN19CS306047":"Shubham","EN19CS306031":"Nimish"}
+# print(products.get("EN19CS306041"),products.get("EN19CS306047"))
+# OUTPUT = None Shubham
+
+# (.keys())----->>>this function will print all the keys of the dictionary
+# products = {"EN19CS306047":"Shubham","EN19CS306031":"Nimish"}
+# print(products.keys())
+
+# (.values())------>>> this function will print all the values of the dictionary
+# products = {"EN19CS306047":"Shubham","EN19CS306031":"Nimish"}
+# print(products.values())
+
+# (.items())------>>>> this function will return keys as well as the values as in a set
+
+# products = {"EN19CS306047":"Shubham","EN19CS306031":"Nimish"}
+# print(products.items())
+
+# Now we will access the keys and values of dictionary in a proper way using for loop
+products = {"EN19CS306047":"Shubham","EN19CS306031":"Nimish"}
+# [keys]--->>>
+# for k in products.keys():
+    # print(k)
+#[values]---->>>
+# for v in products.values():
+    # print(v)
+
+#[items]---->>>
+# for k,v in products.items():
+    # print(k,":",v)
+
+# OUTPUT = EN19CS306047 : Shubham
+         # EN19CS306031 : Nimish
