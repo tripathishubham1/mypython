@@ -1,0 +1,175 @@
+# Modules in python import and export---->>>>>
+# to understand the module i have created two file here  mimport and mexport
+# where mimport is the file where we will import the created modules
+# and mexport is the file where we will create the modules
+# basically if you have learnt the C or C++ programming language then you will understand
+# module is a header file which we can import
+# using the (import)-->>fun it is just like
+#include<stdio.h>
+# where include is the (import) and stdio.h is the module
+
+# HERE I WILL IMPORT THE mexport.py MODULE
+# the condition is that you have to save the importing and exporting module at same directory
+# ------------------------------------------------------------------------------
+# import mexport
+#
+# mexport.add(10,3)
+# mexport.mul(10,3)
+
+# ------------------------------------------------------------------------------
+# you can use your own name function using   (as)
+# example---->>>>>>
+#
+# import mexport as mf
+#
+# mf.mul(10,3)
+# mf.add(10,3)
+
+
+# If you dont want to specify the module's function name then you can use (from)<<<-----
+# example-->>
+#
+# from mexport import add,mul
+#
+# add(10,3)
+# mul(10,3)
+
+# ________________________________________________________________________________________
+# you can also call a list without making its function from the mexport to mimport
+# example---->>
+
+# import mexport as lss
+#
+# print(lss.ls)
+# ------------------------------------------------------------------------------------
+# ImportWarning -->>
+# IF YOU USE in (as)  A SYMBOL IT WILL NOT TAKE ANY FUNCTION THAT STARTS WITH SYMBOLS
+# SO DONT USE THE SYMBOLS AS A NAME HERE
+
+# DIR FUNCTION IN MODULES---->>>>>>>>
+
+# import mexport as mf
+# print(dir(mf))
+
+# here you can get the attributes of the mexport module..
+# _______________________________________________________________________________________________________
+# to get information of bultins functions in module mexport use the(__builtins__) attribute
+# import mexport as mf
+#
+# print(mf.__builtins__)
+
+# AND THEN YOU CAN USE THE ATTRIBUTES TO GET INFORMATIONS LIKE (__name__) LETS SEE--->>>>
+
+# import mexport as mf
+# print(mf.__name__)
+
+# it will give the name of module (mexport)
+
+# ____________________________________________________________________________________________________
+# You can also get the operations info from dir function example--->>>
+
+# import mexport as mf
+# print(dir(mf.__builtins__))
+# ______________________________________________________________________________________________________________
+
+# BUILT IN MODULES----->>>>>>>>#
+
+# ----------------------------->>>>MATH<<<<----------------------------------------------------------------
+
+# it is a module very useful for mathematics operations so first lets see wha type of operations we take from it
+
+# import math
+
+# print(dir(math))
+
+# _______________________________________________________________________________________________________________________________
+# '__doc__', '__loader__', '__name__', '__package__', '__spec__', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'ceil', 'comb', 'copysign', 'cos', 'cosh', 'degrees', 'dist', 'e', 'erf', 'erfc', 'exp', 'expm1', 'fabs', 'factorial', 'floor', 'fmod', 'frexp',
+# 'fsum', 'gamma', 'gcd', 'hypot', 'inf', 'isclose', 'isfinite', 'isinf', 'isnan', 'isqrt', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'log2', 'modf', 'nan', 'perm', 'pi', 'pow', 'prod', 'radians', 'remainder', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'tau', 'trunc']
+# ____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+# YOU CAN SEE THESE FUNCTIONS ARE USABLE IN MATHS MODULES YOU CAN USE ANY OF THEM
+# I AM HERE GIVING YOU ONLY SOME INFORMATIONS
+
+# *** floor and ceil ***
+
+# floor is to determine lowest integer value and ceil to determine greatest integer  value
+# as we know that in modulo(%)  we use floor
+
+# import math
+
+# print(math.floor(10.5))
+# print(math.floor(-10.5))
+# print(math.ceil(10.5))
+# print(math.ceil(-10.5))
+#
+# it will print
+# 10
+# -11
+# 11
+# -10
+
+# ______________________________________________________________________________________________________________________________________---
+# --------------------------------->>>>RANDOM<<<<_------------------------------------------------------------------------------
+
+# Random is a module which give us any number between [0,1)
+
+# lets test it------->>>>
+#
+# import math,random
+#
+# print(random.random())
+
+# it will print any number between 0 to 1
+# ssooooo how to increase the limit simply we will multiply to that range
+# like if i want range from 0 to 100 then
+
+# import math,random
+
+# print(random.random()*100)
+
+# now it will give any number like
+# 11.763543751100148     each and every time different numbers
+# but if we want to get rid off from these DECIMAL DIGITS
+# then we will use a built in function called (round)
+# lets try this
+
+# import math,random
+
+# print(round(random.random()*100))
+
+# so now it will print random value without decimals---->>
+# _______________________________________________________________________________________________________________________________________
+
+# CHOICE FUNCTION OF RANDOM MODULE----->>>>>>
+
+# here choice function will give you random strings or numbers of a given list
+# example----->>>>>>
+
+# import random
+
+# ld = ["shubham","nimish","rohan","rohit"]
+
+# print(random.choice(ld))
+
+# this will give random values of given string------>>>>>>>>>>
+# _____________________________________________________________________________________________________________________________
+
+# Range function also useful here lets see how---------->>>>>>>>>>>>>>>>>>
+
+# import random
+#
+# ld = list(range(100))
+# print(random.choice(ld))
+
+# it will print random value from range 0 to 99
+# ___________________________________________________________________________________________________________________________________________
+
+# CHOICES FUNCTION OF RANDOM MODULE------>>>
+# IT WILL GIVE MORE THAN ONE RANDOM VALUE---->>>
+
+# import random
+
+# ld = ["shubham","nimish","rohan","rohit","yash","gurupreet","harsh"]
+# print(random.choices(ld,k=2))
+
+# here "k="  means how much values you want from the list
+# if you dont specify the k value then it will give only one random value
