@@ -1,0 +1,9 @@
+def add(a,b):
+    c = a+b
+    print("Sum = ",c)
+
+def mul(a,b):
+    c = a*b
+    print("Multi = ",c)
+
+ls = ["shubham","nimish","rohit","rohan"]
