@@ -1,0 +1,44 @@
+# Python Packages-->>>>>>>>>>
+# Python Packages are the directory of modules , or we can say where all the modules of a project are to be saved
+# is called as a package.
+
+# When You Create A Package It Gives You A new Directory And A (__init_.py)<---- this file
+# the init file is just a initializtiion for your modules ....
+# For Creating a Package You have to DO this --->>>>
+
+Screenshots Are On The Folders
+
+
+# One more special thing about package that you can create  modules of same names----->>>>>
+
+# 1.WITHOUT PACKAGE
+Screenshots Are on The Folders
+
+# 2.WITH PACKAGE
+Screenshots Are On The Folders
+
+
+
+
+# (!) HOW TO IMPORT A PACKAGE ------>>>>>>>>>>>
+# FIRST YOU HAVE TO MAKE ANY TWO PACKAGES--->>>
+# Add some modules in them---->>>
+# And then you have to do this---->>>
+# Or you can refactor this by using (as)
+# (THIS WILL WORK ONLY IN PACKAGES IN ROOT LIBRARY IT WLL NOT WORK)
+Screenshots Are On The Folders
+# HOW TO INSTALL EXTERNAL PACKAGES------>>>>>>>
+
+# a site for external package ---->>>>>>(https://pypi.org/)<---------------------
+
+# Here you can get many many packages for free
+
+# So to install Any Pacakge globally you have to go to Command Prompt and write this-->>>
+# pip install package_name
+#This will install the package globally and you can access the package in IDE by Installing In IDE then
+# # Write this command in python--->>
+# from package name import module
+# _____________________________________________________________________________________________________
+# Here Are Some Screenshot Of Importing External Packages-->>>
+
+Screenshots Are On The Folders
